@@ -1,0 +1,30 @@
+{
+    "prettier.configPath": ".prettierrc",
+    "files.exclude": {
+      ".next": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "never"
+    },
+    "eslint.probe": [
+      "json",
+      "javascript",
+      "typescript",
+      "typescriptreact",
+      "javascriptreact"
+    ],
+    "eslint.validate": [
+      "json",
+      "javascript",
+      "typescript",
+      "typescriptreact",
+      "javascriptreact"
+    ],
+    "css.validate": false,
+    "scss.validate": false,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }

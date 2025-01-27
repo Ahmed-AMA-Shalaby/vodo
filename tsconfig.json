@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -19,9 +21,15 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/pages/*": ["src/app/(pages)/*"],
+      "@/assets/*": ["src/shared/assets/*"],
+      "@/components/*": ["src/shared/components/*"],
+      "@/models/*": ["src/shared/models/*"],
+      "@/services": ["src/shared/services"],
+      "@/utils/*": ["src/shared/utils/*"],
+      "@/tests/*": ["tests/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "*.mjs", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
