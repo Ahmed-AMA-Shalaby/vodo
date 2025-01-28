@@ -1,5 +1,7 @@
-const Home = (): React.JSX.Element => {
-  return <main />;
+import { redirect } from 'next/navigation';
+
+const Home = (): void => {
+  redirect('/shows');
 };
 
 export default Home;

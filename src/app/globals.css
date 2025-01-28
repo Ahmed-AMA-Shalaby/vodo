@@ -6,3 +6,9 @@ html {
   background-color: #f9f9f9;
   color: #333;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
